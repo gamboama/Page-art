@@ -1,0 +1,195 @@
+  
+ @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Bebas+Neue&family=Cedarville+Cursive&family=Dai+Banna+SIL:ital,wght@1,300&family=Lisu+Bosa:ital,wght@0,400;0,700;1,300;1,500;1,600&family=Narnoor&family=Roboto:wght@300;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cedarville+Cursive&family=Dai+Banna+SIL:ital,wght@1,300&family=Lisu+Bosa:ital,wght@0,400;0,700;1,300;1,500;1,600&family=Narnoor&family=Roboto:wght@300;500;700&display=swap');
+header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px;
+    background-color: rgb(1, 1, 11);
+    color: rgb(246, 242, 242);
+    border-bottom: 2px solid red;
+    min-height: 70px;
+    }
+.h1{
+   
+    font-family: 'Alkalami', serif;
+     color: rgb(202, 14, 14);
+     margin-left: 30px;
+}
+    
+    .horizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .vertical{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .horizontal li:hover .vertical{
+        display: block;
+    }
+    
+  @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cedarville+Cursive&family=Dai+Banna+SIL:ital,wght@1,300&family=Lisu+Bosa:ital,wght@0,400;0,700;1,300;1,500;1,600&family=Narnoor&family=Roboto:wght@300;500;700&display=swap');
+
+header nav a{
+    color: azure;
+    text-decoration: none;
+    display: inline-block;
+    padding:  20px;
+    margin: 20px;
+    transition: .5s;
+    border-radius: 10px;
+    
+}
+header nav a:hover{
+    background-color: red;
+}
+.img1{
+    display: flex;
+  
+    justify-content: end;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+
+.contenedor2{
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    font-size: 25px;
+    font-family: cursive;
+    
+
+
+}
+
+.contenedor2 h2{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.contenedor2  p {
+   width: 90%;
+}
+
+button{
+    color:red;
+    background-color: black;
+    height: 50px;
+    width: 140px;
+    border-radius: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+button:hover{
+    color: black;
+    background-color: red;
+    transition: .6s;
+}
+button a{
+    text-decoration: none;
+    color: red;
+}
+button a:hover {color: black;
+
+}
+
+footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px;
+    
+    background-color: rgb(1, 1, 11);
+    color: rgb(246, 242, 242);
+    border-bottom: 2px solid red;
+}
+
+footer nav a{
+    color: azure;
+    text-decoration: none;
+    margin: 20px;
+    margin-left: 230px;  
+    
+}
+
+
+
+i img{
+    width: 40px;
+    height: 40px;
+}
+
+i img, #check{
+    display: none;
+}
+
+@media(max-width:1160px){
+    
+}
+
+@media(max-width:720px){
+    .img1{
+        display: none;
+    }
+    header{ width: 100%;
+    flex-direction :column}
+    
+   
+    .contenedor2 button {
+        
+        margin-bottom: 20px;
+        
+
+    }
+
+    @media(max-width:400px){
+        header{
+            width: 100%;
+        }
+        .contenedor3 h2{
+             margin-left: -25px;
+            
+        }
+        .contenedor2 h2 {
+            font-size: 20px;
+           
+        }
+        .contenedor2 p{
+            font-size: 15px;
+            margin-left: -90px;
+        }
+        footer{
+            width: 100%;
+            
+        }
+        footer a{
+            flex-direction: row;
+        }
+
+        button{
+            margin-left: 10px;
+        }
+        button a{
+            text-decoration: none;
+        }
+    }
+}

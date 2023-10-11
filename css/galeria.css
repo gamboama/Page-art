@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cedarville+Cursive&family=Dai+Banna+SIL:ital,wght@1,300&family=Lisu+Bosa:ital,wght@0,400;0,700;1,300;1,500;1,600&family=Narnoor&family=Roboto:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(/img/fondo.jpg);
+}
+
+
+.contenedor{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 60%;
+    font-family: sans-serif;
+    padding: 0 20px; 
+    margin-left: 350px;
+
+}
+.flex{
+    display: flex;
+    flex-flow: column wrap;
+    
+    
+    
+}
+.horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.horizontal li:hover .vertical{
+    display: block;
+}
+.titulo{
+    text-align: center;
+    margin: 20px 40px;
+    border: 2px solid rgb(249, 247, 247);
+    background-color: black;
+    height: 300px;
+    width: 70%;
+    border-radius: 20px;
+    margin-left: 250px;
+    padding: 30px;
+}
+.titulo h3{
+    color: #f90707;
+    font-size: 60px;
+    font-family: 'Alkalami', serif;
+}
+
+.titulo p{
+    font-size: 30px;
+    color: #fff;
+    font-family: cursive;
+}
+/*.card-container{
+    display: flex;
+    width: 600px;
+    height: 420px;
+    background: #7c7777;
+    margin-right: 250px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+*/
+.header{
+    border-right: 1px solid #ddd;
+}
+
+.descrip{
+    background: #948c8c;
+}
+.header, .descrip{
+    padding: 20px;
+    text-align: center;
+}
+.header a{
+    position: relative;
+    display: block;
+}
+.header img{
+    border-radius: 20px;
+    box-shadow: 0 0 0 8px rgba(0,0, 0, .6);
+    margin: 20px 30px;
+    transition: .3s;
+    height: 300px;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgba(0,0, 0, .06);
+}
+.header h2{
+    color: rgb(255, 0, 0);
+}
+.header h4{
+    margin-bottom: 20px;
+}
+.descrip{
+   position: relative;
+   border-radius: 10px;
+}
+.descrip img{
+    height: 320px;
+    border: 5px solid black;
+    
+}
+
+.descrip .social{
+    margin-top: 25px;
+}
+
+.descrip .social a{
+    display: inline-block;
+    padding: 0 15px;
+    color: rgb(255, 47, 64);
+}
+header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px;
+    
+    background-color: rgb(1, 1, 11);
+    color: rgb(246, 242, 242);
+    border-bottom: 2px solid red;
+    }
+header nav a{
+    color: azure;
+    text-decoration: none;
+    display: inline-block;
+    padding:  20px;
+    margin: 20px;
+    transition: .5s;
+    border-radius: 10px;
+    
+}
+header nav a:hover{
+    background-color: red;
+}
+footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px;
+    
+    background-color: rgb(1, 1, 11);
+    color: rgb(246, 242, 242);
+    border-bottom: 2px solid red;
+}
+
+footer nav a{
+    color: azure;
+    text-decoration: none;
+    margin: 20px;
+    margin-left: 230px;  
+    
+}
+button{
+    color:rgb(242, 238, 238);
+    background-color: black;
+    height: 50px;
+    width: 140px;
+    border-radius: 30px;
+    font-family: cursive;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+button:hover{
+    color: black;
+    background-color: red;
+    transition: .6s;
+}
+
+
+button a{
+    text-decoration: none;
+}
+@media(max-width :810px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 130px;
+
+    }
+    
+    header{
+        flex-direction: column;
+        
+    }
+    .titulo {
+      width: 50%;
+      height: 400px;
+      margin-left: 150px;
+    }
+    .titulo h3{
+        font-size: 30px;
+    }
+    .titulo p{
+        font-size: 25px;
+    }
+}
+@media(max-width:590px){
+    .contenedor{
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none;
+        width: 40%;
+        
+    }
+    .descrip{
+        padding: 5px 20px 20px 20px ;
+        background: transparent;
+        width: 70%;
+    }
+   .header img {
+    width: 150px;
+    height: 200px;
+   }
+  .descrip img{
+    width: 200px;
+    height: 250px;
+    
+  }
+    
+}
+
+@media(max-width:400px){
+    .contenedor{
+       display: block;
+       margin: 80px;
+       font-size: 12px;
+       
+    }
+
+    .header{
+    padding: 20px 20px 5px 20px;
+    border: none;
+        
+        
+    }
+    .descrip{
+        padding: 5px 20px 20px 20px;
+        
+    }
+    button {
+        margin-top: 100px;
+    }
+    button a {
+        text-decoration: none;
+    
+    }
+    header h2 h4 {
+        margin-left: 130px;
+    }
+}
